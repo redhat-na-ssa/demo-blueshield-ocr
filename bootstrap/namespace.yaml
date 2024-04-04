@@ -3,5 +3,7 @@ apiVersion: v1
 metadata:
   name: healthcare-ocr 
   annotations:
-    openshift.io/description: 'Demo - OCR'
-    openshift.io/display-name: healthcare-ocr
+    openshift.io/display-name: Demo - OCR
+    openshift.io/description: |
+      A demo showing the use of OCR to
+      aid in healthcare solutions
