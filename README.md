@@ -3,7 +3,7 @@ This project contains the configurations to provide infrasctructure, on OpenShif
 
 The demo demonstrates the value of using OpenShift (onPrem) to gather/curate onPrem data which is then used by the ARO cloud instance for model training.
 
-* * This repo is currently subject to frequent, breaking changes!
+_This repo is currently subject to frequent, breaking changes!_
 
 ## Prerequisites
 
