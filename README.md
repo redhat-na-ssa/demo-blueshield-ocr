@@ -42,8 +42,8 @@ NOTE: `bash`, `git`, and `oc` are available in the [OpenShift Web Terminal](http
 
 ```sh
 oc whoami
-git clone https://github.com/redhat-na-ssa/demo-ocr.git demo
-cd demo
+git clone https://github.com/redhat-na-ssa/demo-ocr.git
+cd demo-ocr
 ```
 
 NOTE: open a new terminal to activate new configuration
