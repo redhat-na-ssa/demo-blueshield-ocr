@@ -19,4 +19,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/text
-        value: 'DEMO: Dell CSC Lab'
+        value: 'DEMO: OpenShift w/ OCR'
