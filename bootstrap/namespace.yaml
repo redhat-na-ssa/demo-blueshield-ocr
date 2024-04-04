@@ -1,0 +1,7 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: healthcare-ocr 
+  annotations:
+    openshift.io/description: 'Demo - OCR'
+    openshift.io/display-name: healthcare-ocr
