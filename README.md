@@ -53,6 +53,15 @@ NOTE: open a new terminal to activate new configuration
 Basic cluster config
 
 ```sh
-# setup demo
+# setup web terminal
 until oc apply -k bootstrap/; do : ; done
+
+# run RHOAI setup
+until oc apply -k gitops/run-rhoai; do : ; done
+
+# run Dev Spaces setup
+until oc apply -k gitops/run-devspaces; do : ; done
+
+# run gpu tests
+until oc apply -k gitops/run-tests; do : ; done
 ```
