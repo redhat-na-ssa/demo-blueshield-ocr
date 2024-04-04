@@ -22,10 +22,13 @@ This repo is currently subject to frequent, breaking changes!
 
 NOTE: bash, git, and oc are available in the OpenShift Web Terminal
 
-### The following are used to encrypt secrets and are optional:
+### Tools
+The following are used to encrypt secrets and are optional:
 - age - Info
 - sops - Info
-- Bootstrapping a Cluster
-- Verify you are logged into your cluster using oc.
-- Clone this repository
-- To a local environment
+  
+### Bootstrapping a Cluster
+1. Verify you are logged into your cluster using oc
+2. Clone this repository
+
+To a local environment
