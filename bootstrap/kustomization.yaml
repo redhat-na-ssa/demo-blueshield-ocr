@@ -5,9 +5,6 @@ resources:
 # - banner-data.yaml
 - link-demo.yaml
 
-# RHOAI demo w/ gpu autoscaling
-- https://github.com/codekow/demo-ai-gitops-catalog/demos/rhods-nvidia-gpu-autoscale
-
 # OpenShift Web Terminal
 - https://github.com/codekow/demo-ai-gitops-catalog/components/operators/web-terminal/operator/overlays/fast
 - web-terminal-tooling.yaml
