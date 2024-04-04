@@ -2,18 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-# - banner-data.yaml
 - link-demo.yaml
 
 # OpenShift Web Terminal
 - https://github.com/codekow/demo-ai-gitops-catalog/components/operators/web-terminal/operator/overlays/fast
 - web-terminal-tooling.yaml
-
-patches:
-  - target:
-      kind: ConsoleNotification
-      name: banner-demo
-    patch: |-
-      - op: replace
-        path: /spec/text
-        value: 'DEMO: OpenShift w/ OCR'

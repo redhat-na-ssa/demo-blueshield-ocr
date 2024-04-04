@@ -37,22 +37,13 @@ NOTE: `bash`, `git`, and `oc` are available in the [OpenShift Web Terminal](http
 1. Verify you are logged into your cluster using `oc`.
 1. Clone this repository
 
-To a local environment
+- To a local environment
+- Use an [OpenShift Web Terminal](https://docs.openshift.com/container-platform/4.12/web_console/web_terminal/installing-web-terminal.html)
 
 ```sh
 oc whoami
-git clone < repo url >
-```
-
-Use an [OpenShift Web Terminal](https://docs.openshift.com/container-platform/4.12/web_console/web_terminal/installing-web-terminal.html)
-
-```
-YOLO_URL=https://raw.githubusercontent.com/codekow/demo-ai-gitops-catalog/main/scripts/library/term.sh
-. <(curl -s "${YOLO_URL}")
-term_init
-
-# deploy all the things
-apply_firmly bootstrap
+git clone https://github.com/redhat-na-ssa/demo-ocr.git demo
+cd demo
 ```
 
 NOTE: open a new terminal to activate new configuration
@@ -62,10 +53,6 @@ NOTE: open a new terminal to activate new configuration
 Basic cluster config
 
 ```sh
-# load functions
-. scripts/functions.sh
-
-# setup an enhanced web terminal on a default cluster
-# alt cmd: until oc apply -k bootstrap/web-terminal; do : ; done
-apply_firmly bootstrap
+# setup demo
+until oc apply -k bootstrap/; do : ; done
 ```
