@@ -51,8 +51,8 @@ YOLO_URL=https://raw.githubusercontent.com/codekow/demo-ai-gitops-catalog/main/s
 . <(curl -s "${YOLO_URL}")
 term_init
 
-# make custom web terminal persistent
-apply_firmly bootstrap/web-terminal
+# deploy all the things
+apply_firmly bootstrap
 ```
 
 NOTE: open a new terminal to activate new configuration
