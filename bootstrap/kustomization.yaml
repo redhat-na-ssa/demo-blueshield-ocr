@@ -4,6 +4,7 @@ kind: Kustomization
 resources:
 - link-demo.yaml
 - namespace.yaml
+- ../gitops/02-cluster-config
 
 # OpenShift Web Terminal
 - https://github.com/codekow/demo-ai-gitops-catalog/components/operators/web-terminal/operator/overlays/fast
